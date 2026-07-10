@@ -8,13 +8,137 @@
   </head>
   <body>
     <header class="hero">
-      <div class="hero__content">
-        <p class="eyebrow">Portfolio / Resume</p>
-        <h1>안녕하세요, 저는 <span>OOO</span>입니다.</h1>
-        <p class="lead">
-          사용자 경험을 먼저 생각하는 프론트엔드 개발자입니다. 깔끔한 인터페이스와
-          안정적인 동작을 함께 만드는 것을 좋아합니다.
-        </p>
+      <div class="hero__content hero__content--split">
+        <div class="hero__text">
+          <p class="eyebrow">Portfolio / Resume</p>
+          <h1>안녕하세요, 저는 <span>OOO</span>입니다.</h1>
+          <p class="lead">
+            보안 위협을 이해하고 시스템을 안전하게 지키는 보안엔지니어입니다.
+            서비스의 안정성과 신뢰성을 높이는 데 관심이 많습니다.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">연락하기</a>
+            <a class="btn btn--secondary" href="#projects">프로젝트 보기</a>
+          </div>
+          <ul class="hero__meta">
+            <li>📍 서울, 대한민국</li>
+            <li>✉️ your@email.com</li>
+            <li>🔗 github.com/yourname</li>
+          </ul>
+        </div>
+        <div class="hero__photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="프로필 사진" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section__title">
+          <p>About</p>
+          <h2>소개</h2>
+        </div>
+        <div class="section__content">
+          <p>
+            웹 서비스와 인프라의 보안 취약점을 분석하고 대응하는 일을 좋아합니다.
+            침해 대응, 보안 정책 수립, 로그 분석과 대응 체계를 함께 구축하는 것을 중시합니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section__title">
+          <p>Experience</p>
+          <h2>경력</h2>
+        </div>
+        <div class="section__content">
+          <article class="card">
+            <h3>보안엔지니어</h3>
+            <p class="card__meta">회사명 · 2022 - 현재</p>
+            <ul>
+              <li>보안 모니터링 및 사고 대응 수행</li>
+              <li>취약점 점검 및 보안 정책 개선</li>
+              <li>로그 분석과 위협 탐지 업무 수행</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>시스템 운영</h3>
+            <p class="card__meta">회사명 · 2020 - 2022</p>
+            <ul>
+              <li>서버 및 네트워크 운영 환경 관리</li>
+              <li>보안 이슈 대응 및 복구 작업 수행</li>
+              <li>운영 자동화 및 모니터링 체계 개선</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section__title">
+          <p>Skills</p>
+          <h2>기술 스택</h2>
+        </div>
+        <div class="section__content">
+          <div class="chip-list">
+            <span class="chip">Linux</span>
+            <span class="chip">Network</span>
+            <span class="chip">SIEM</span>
+            <span class="chip">WAF</span>
+            <span class="chip">SOC</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__title">
+          <p>Projects</p>
+          <h2>프로젝트</h2>
+        </div>
+        <div class="section__content card-grid">
+          <article class="card">
+            <h3>보안 모니터링 구축</h3>
+            <p>로그 수집과 탐지 규칙을 설계해 실시간 모니터링 체계를 구축했습니다.</p>
+          </article>
+          <article class="card">
+            <h3>취약점 점검 자동화</h3>
+            <p>정기 점검 업무를 자동화해 대응 속도와 정확성을 높였습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section__title">
+          <p>Education</p>
+          <h2>학력</h2>
+        </div>
+        <div class="section__content">
+          <article class="card">
+            <h3>OO대학교</h3>
+            <p class="card__meta">정보보호학 전공 · 2016 - 2020</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__title">
+          <p>Contact</p>
+          <h2>연락처</h2>
+        </div>
+        <div class="section__content">
+          <p>보안 관련 협업이나 문의가 있다면 편하게 연락주세요.</p>
+          <a class="contact-link" href="mailto:your@email.com">your@email.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> OOO. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#contact">연락하기</a>
           <a class="btn btn--secondary" href="#projects">프로젝트 보기</a>
